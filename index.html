@@ -1,214 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>PERSONO AI - Tailored, Interpretable, and Actionable Data Science</title>
-        <link rel="icon" type="image/x-icon" href="assets/logo-b3-icon@0.5x.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#page-top">Persono AI</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-<!--                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="/llm-app">LLM Ranking</a></li> -->
-                    </ul>
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Persono AI — Boutique Probabilistic AI & Data Science Consultancy | San Francisco</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+  <!-- Primary SEO -->
+  <meta name="description" content="Persono AI is a boutique probabilistic AI and data science consultancy in San Francisco. We build interpretable, white-box models that turn your data into clear business decisions. Serving Engineering, Finance, Biotech, Adtech, and Supply Chain.">
+  <meta name="keywords" content="Persono LLC, probabilistic AI, data science consultancy, white box models, interpretable machine learning, Bayesian modeling, uncertainty quantification, AI consulting San Francisco, data science San Francisco, explainable AI">
+  <meta name="author" content="Persono AI">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://persono.ai/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://persono.ai/">
+  <meta property="og:title" content="Persono AI — Boutique Probabilistic AI & Data Science Consultancy">
+  <meta property="og:description" content="We build interpretable, uncertainty-aware AI models that turn your data into clear, actionable business decisions. Based in San Francisco.">
+  <meta property="og:image" content="https://persono.ai/assets/img/og-image.png">
+  <meta property="og:site_name" content="Persono AI">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://persono.ai/">
+  <meta name="twitter:title" content="Persono AI — Boutique Probabilistic AI & Data Science Consultancy">
+  <meta name="twitter:description" content="We build interpretable, uncertainty-aware AI models that turn your data into clear, actionable business decisions. Based in San Francisco.">
+  <meta name="twitter:image" content="https://persono.ai/assets/img/og-image.png">
+
+  <!-- Geo -->
+  <meta name="geo.region" content="US-CA">
+  <meta name="geo.placename" content="San Francisco">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Persono AI",
+    "description": "Boutique probabilistic AI and data science consultancy specializing in interpretable white-box models and uncertainty quantification.",
+    "url": "https://persono.ai",
+    "logo": "https://persono.ai/assets/logo.jpg",
+    "image": "https://persono.ai/assets/img/og-image.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "email": "xxx@persono.ai",
+    "telephone": "+16281xxxxx",
+    "areaServed": "US",
+    "serviceType": ["Probabilistic AI Consulting", "Data Science", "Machine Learning", "Bayesian Modeling", "Interpretable AI"],
+    "knowsAbout": ["Probabilistic Modeling", "White-Box AI", "Data Science", "Uncertainty Quantification", "Bayesian Statistics"],
+    "sameAs": []
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">Persono<span> AI</span></a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#approach">Approach</a>
+    <a href="#industries">Industries</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<main>
+<section id="hero" aria-label="Hero">
+  <div class="grid-bg"></div>
+  <div class="dot-field" id="dotField"></div>
+  <div class="orb"></div>
+
+  <!-- Probability curve decoration -->
+  <svg class="prob-curve" viewBox="0 0 440 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="curveGrad" x1="0" y1="0" x2="440" y2="0" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#B8913A" stop-opacity="0.3"/>
+        <stop offset="25%" stop-color="#B8913A" stop-opacity="1"/>
+        <stop offset="75%" stop-color="#B8913A" stop-opacity="1"/>
+        <stop offset="100%" stop-color="#B8913A" stop-opacity="0.3"/>
+      </linearGradient>
+      <linearGradient id="fillGrad" x1="0" y1="0" x2="0" y2="280" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#3E5C72" stop-opacity="0.35"/>
+        <stop offset="100%" stop-color="#3E5C72" stop-opacity="0.04"/>
+      </linearGradient>
+      <linearGradient id="tailGrad" x1="0" y1="0" x2="0" y2="280" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#B8913A" stop-opacity="0.12"/>
+        <stop offset="100%" stop-color="#B8913A" stop-opacity="0.02"/>
+      </linearGradient>
+    </defs>
+    <!-- Heavy tail shading — left tail -->
+    <path d="M 0 235 C 18 232, 38 226, 60 218 L 60 252 L 0 252 Z" fill="url(#tailGrad)"/>
+    <!-- Heavy tail shading — right tail -->
+    <path d="M 380 218 C 402 226, 422 232, 440 235 L 440 252 L 380 252 Z" fill="url(#tailGrad)"/>
+    <!-- Main body fill -->
+    <path d="M 0 235 C 18 232, 38 226, 60 218 C 88 207, 118 190, 145 168 C 172 146, 196 110, 220 50 C 244 110, 268 146, 295 168 C 322 190, 352 207, 380 218 C 402 226, 422 232, 440 235 L 440 252 L 0 252 Z" fill="url(#fillGrad)"/>
+    <!-- Fat-tailed (Cauchy-like) curve stroke -->
+    <path d="M 0 235 C 18 232, 38 226, 60 218 C 88 207, 118 190, 145 168 C 172 146, 196 110, 220 50 C 244 110, 268 146, 295 168 C 322 190, 352 207, 380 218 C 402 226, 422 232, 440 235" stroke="url(#curveGrad)" stroke-width="1.5" fill="none"/>
+    <!-- Vertical mean line -->
+    <line x1="220" y1="50" x2="220" y2="252" stroke="#B8913A" stroke-width="1" stroke-dasharray="4 4" opacity=".6"/>
+    <!-- Axis -->
+    <line x1="0" y1="252" x2="440" y2="252" stroke="#B8913A" stroke-width=".8" opacity=".4"/>
+    <text x="220" y="268" font-family="DM Mono" font-size="10" fill="#8E9BAA" text-anchor="middle">μ</text>
+    <text x="155" y="268" font-family="DM Mono" font-size="10" fill="#8E9BAA" text-anchor="middle">−σ</text>
+    <text x="285" y="268" font-family="DM Mono" font-size="10" fill="#8E9BAA" text-anchor="middle">+σ</text>
+    <!-- Heavy tail annotation -->
+    <text x="30" y="212" font-family="DM Mono" font-size="8" fill="#B8913A" text-anchor="middle" opacity=".75">fat tail</text>
+    <text x="410" y="212" font-family="DM Mono" font-size="8" fill="#B8913A" text-anchor="middle" opacity=".75">fat tail</text>
+    <text x="220" y="38" font-family="DM Mono" font-size="9" fill="#B8913A" text-anchor="middle" opacity=".8">heavy-tailed</text>
+  </svg>
+
+  <div style="position:relative;z-index:2;">
+    <p class="hero-eyebrow">Probabilistic AI & Data Science</p>
+    <h1 class="hero-title">
+      Turning Your Data Into<br><em>Clear Business Decisions</em>
+    </h1>
+    <p class="hero-sub">Boutique consultancy specializing in interpretable, uncertainty-aware models built for your unique challenges.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary"><span>Start a Conversation</span></a>
+      <a href="#about" class="btn-ghost">Learn More</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span class="scroll-line"></span>
+    Scroll to explore
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="stat-item reveal">
+    <div class="stat-num">5+</div>
+    <div class="stat-label">Industries Served</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-1">
+    <div class="stat-num">100%</div>
+    <div class="stat-label">White-Box Models</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-2">
+    <div class="stat-num">Bespoke</div>
+    <div class="stat-label">Solutions, Every Time</div>
+  </div>
+  <div class="stat-item reveal reveal-delay-3">
+    <div class="stat-num">SF</div>
+    <div class="stat-label">San Francisco, CA</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" aria-label="About Persono AI">
+  <div class="section-inner">
+    <div class="about-left">
+      <p class="section-tag reveal">About Persono AI</p>
+      <h2 class="section-heading reveal reveal-delay-1">
+        We Make Models You Can<br><em>Understand & Trust</em>
+      </h2>
+      <div class="about-rule reveal reveal-delay-2"></div>
+      <div class="about-body reveal reveal-delay-2">
+        <p>We specialize in building customized AI and data science models that help businesses turn their data into clear, actionable insights.</p>
+        <p>Our team works <strong>collaboratively with clients</strong> to develop interpretable ("white box") models tailored to their unique challenges—while rigorously accounting for uncertainty in the data.</p>
+        <p>Our open-book approach to modeling sets us apart, <strong>empowering clients to understand and learn from their data</strong>, not just accept a black box.</p>
+      </div>
+      <div class="industries reveal reveal-delay-3">
+        <div class="industries-label">Industries we serve</div>
+        <div class="pill-grid">
+          <span class="pill">Engineering</span>
+          <span class="pill">Finance</span>
+          <span class="pill">Biotech</span>
+          <span class="pill">Adtech</span>
+          <span class="pill">Supply Chain</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-cards">
+      <div class="feature-card reveal">
+        <div class="feature-num">01</div>
+        <div class="feature-title">Probabilistic Modeling</div>
+        <div class="feature-desc">Every model we build rigorously quantifies uncertainty. You get not just a prediction, but a full probability distribution—so you can make decisions with calibrated confidence.</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-num">02</div>
+        <div class="feature-title">Interpretable "White Box" AI</div>
+        <div class="feature-desc">We reject black-box solutions. Our models are transparent, explainable, and auditable. You'll understand exactly why the model says what it says.</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-num">03</div>
+        <div class="feature-title">Tailored to Your Challenge</div>
+        <div class="feature-desc">No off-the-shelf tools. We design every analysis from the ground up around your business context, data structure, and decision-making needs.</div>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-num">04</div>
+        <div class="feature-title">Collaborative Partnership</div>
+        <div class="feature-desc">We work alongside your team throughout every project—transferring knowledge and building internal capability, not dependency.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries" aria-label="Industries Served">
+  <div class="section-inner">
+    <p class="section-tag" style="justify-content:center;" >Industries</p>
+    <h2 class="section-heading reveal">Expertise Across<br><em>Complex Domains</em></h2>
+    <div class="industry-grid" style="margin-top:60px;">
+      <div class="industry-cell reveal">
+        <span class="industry-icon">⚙️</span>
+        <div class="industry-name">Engineering</div>
+      </div>
+      <div class="industry-cell reveal reveal-delay-1">
+        <span class="industry-icon">📈</span>
+        <div class="industry-name">Finance</div>
+      </div>
+      <div class="industry-cell reveal reveal-delay-2">
+        <span class="industry-icon">🧬</span>
+        <div class="industry-name">Biotech</div>
+      </div>
+      <div class="industry-cell reveal reveal-delay-3">
+        <span class="industry-icon">📡</span>
+        <div class="industry-name">Adtech</div>
+      </div>
+      <div class="industry-cell reveal reveal-delay-3">
+        <span class="industry-icon">🔗</span>
+        <div class="industry-name">Supply Chain</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section id="approach" aria-label="Our Approach">
+  <div class="section-inner">
+    <div class="approach-visual reveal">
+      <div class="curve-container">
+        <svg viewBox="0 0 480 320" width="100%" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bellFill" x1="0" y1="0" x2="0" y2="320" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#3E5C72" stop-opacity="0.45"/>
+              <stop offset="100%" stop-color="#3E5C72" stop-opacity="0.04"/>
+            </linearGradient>
+            <linearGradient id="tailFill" x1="0" y1="0" x2="0" y2="320" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#B8913A" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#B8913A" stop-opacity="0.03"/>
+            </linearGradient>
+            <linearGradient id="bellStroke" x1="0" y1="0" x2="480" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#B8913A" stop-opacity="0.4"/>
+              <stop offset="20%" stop-color="#B8913A" stop-opacity="1"/>
+              <stop offset="80%" stop-color="#B8913A" stop-opacity="1"/>
+              <stop offset="100%" stop-color="#B8913A" stop-opacity="0.4"/>
+            </linearGradient>
+            <!-- Ghost normal curve for contrast -->
+            <linearGradient id="ghostStroke" x1="0" y1="0" x2="480" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#3E5C72" stop-opacity="0"/>
+              <stop offset="30%" stop-color="#3E5C72" stop-opacity="0.5"/>
+              <stop offset="70%" stop-color="#3E5C72" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#3E5C72" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Grid lines -->
+          <line x1="0" y1="280" x2="480" y2="280" class="axis-line"/>
+          <line x1="240" y1="20" x2="240" y2="280" class="axis-line"/>
+          <line x1="160" y1="40" x2="160" y2="280" stroke="rgba(184,145,58,.1)" stroke-width="1" stroke-dasharray="3 5"/>
+          <line x1="320" y1="40" x2="320" y2="280" stroke="rgba(184,145,58,.1)" stroke-width="1" stroke-dasharray="3 5"/>
+          <line x1="80"  y1="40" x2="80"  y2="280" stroke="rgba(184,145,58,.07)" stroke-width="1" stroke-dasharray="3 5"/>
+          <line x1="400" y1="40" x2="400" y2="280" stroke="rgba(184,145,58,.07)" stroke-width="1" stroke-dasharray="3 5"/>
+
+          <!-- Ghost normal bell curve (for contrast) -->
+          <path class="ci-shade" d="M 60 278 C 90 278, 115 278, 130 277 C 155 274, 175 230, 200 178 C 218 142, 228 100, 240 72 C 252 100, 262 142, 280 178 C 305 230, 325 274, 350 277 C 365 278, 390 278, 420 278" stroke="url(#ghostStroke)" stroke-width="1.2" fill="none" stroke-dasharray="5 4"/>
+
+          <!-- Left heavy tail fill -->
+          <path class="ci-shade" d="M 0 264 C 20 261, 45 256, 80 248 L 80 280 L 0 280 Z" fill="url(#tailFill)"/>
+          <!-- Right heavy tail fill -->
+          <path class="ci-shade" d="M 400 248 C 435 256, 460 261, 480 264 L 480 280 L 400 280 Z" fill="url(#tailFill)"/>
+
+          <!-- Fat-tailed body fill (Cauchy) — closed -->
+          <path class="ci-shade" d="M 0 264 C 20 261, 45 256, 80 248 C 110 240, 140 224, 165 204 C 192 182, 215 140, 240 36 C 265 140, 288 182, 315 204 C 340 224, 370 240, 400 248 C 435 256, 460 261, 480 264 L 480 280 L 0 280 Z" fill="url(#bellFill)"/>
+
+          <!-- Fat-tailed (Cauchy) curve stroke -->
+          <path class="curve-path" d="M 0 264 C 20 261, 45 256, 80 248 C 110 240, 140 224, 165 204 C 192 182, 215 140, 240 36 C 265 140, 288 182, 315 204 C 340 224, 370 240, 400 248 C 435 256, 460 261, 480 264" stroke="url(#bellStroke)" stroke-width="2" fill="none"/>
+
+          <!-- Mean line -->
+          <line class="ci-shade" x1="240" y1="36" x2="240" y2="280" stroke="#B8913A" stroke-width="1.5" stroke-dasharray="5 4" opacity=".7"/>
+
+          <!-- Tail bracket annotations -->
+          <line class="ci-shade" x1="0" y1="248" x2="80" y2="248" stroke="#B8913A" stroke-width=".8" opacity=".4"/>
+          <line class="ci-shade" x1="400" y1="248" x2="480" y2="248" stroke="#B8913A" stroke-width=".8" opacity=".4"/>
+
+          <!-- Labels -->
+          <text x="240" y="298" class="tick-label" text-anchor="middle">μ</text>
+          <text x="160" y="298" class="tick-label" text-anchor="middle">μ − σ</text>
+          <text x="320" y="298" class="tick-label" text-anchor="middle">μ + σ</text>
+          <text x="80"  y="298" class="tick-label" text-anchor="middle">μ − 2σ</text>
+          <text x="400" y="298" class="tick-label" text-anchor="middle">μ + 2σ</text>
+
+          <!-- Heavy tail labels -->
+          <text class="ci-shade" x="36" y="244" font-family="DM Mono" font-size="8.5" fill="#B8913A" text-anchor="middle" opacity=".85">fat tail</text>
+          <text class="ci-shade" x="444" y="244" font-family="DM Mono" font-size="8.5" fill="#B8913A" text-anchor="middle" opacity=".85">fat tail</text>
+
+          <!-- Ghost label -->
+          <text class="ci-shade" x="358" y="185" font-family="DM Mono" font-size="8" fill="#3E5C72" text-anchor="start" opacity=".7">normal</text>
+          <text class="ci-shade" x="358" y="195" font-family="DM Mono" font-size="8" fill="#3E5C72" text-anchor="start" opacity=".7">(gaussian)</text>
+
+          <!-- Distribution label at top -->
+          <text class="ci-shade" x="240" y="24" font-family="DM Mono" font-size="9" fill="#B8913A" text-anchor="middle" opacity=".9">heavy-tailed distribution</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="approach-content">
+      <p class="section-tag reveal">Our Philosophy</p>
+      <h2 class="section-heading reveal reveal-delay-1">
+        Open-Book<br><em>Science-First</em><br>Modeling
+      </h2>
+      <blockquote class="approach-quote reveal reveal-delay-2">
+        "Empowering clients to understand and learn from their data—not just accept a black box."
+      </blockquote>
+      <p class="approach-body reveal reveal-delay-3">
+        Every business problem carries uncertainty. Our probabilistic approach acknowledges this reality head-on—producing models that communicate confidence levels alongside predictions, so stakeholders can make truly informed decisions.<br><br>
+        We believe that AI should be a tool that sharpens human judgment, not one that replaces it. That's why every model we build is transparent, documented, and explainable at every level.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" aria-label="Selected Projects">
+  <div class="section-inner">
+    <div class="projects-header">
+      <div>
+        <p class="section-tag reveal">Selected Work</p>
+        <h2 class="section-heading reveal reveal-delay-1">
+          Projects That<br><em>Speak for Themselves</em>
+        </h2>
+      </div>
+      <p class="reveal reveal-delay-2" style="font-family:var(--ff-serif);font-style:italic;font-size:1.05rem;color:var(--mist);max-width:300px;line-height:1.65;text-align:right;">
+        A sample of the challenges we've tackled across industries.
+      </p>
+    </div>
+
+    <!--
+      ═══════════════════════════════════════════════════════
+      HOW TO ADD A NEW PROJECT:
+      Copy one <article class="project-card"> block below,
+      paste it inside .projects-grid, and update:
+        • data-index  → next number (04, 05, …)
+        • <img src>   → your project image path
+        • .project-tag → industry label
+        • .project-title → project name
+        • .project-desc → short description (2–3 sentences)
+        • .project-chip spans → method/tool tags
+      The grid reflows automatically (3 cols → 2 → 1 on mobile).
+      ═══════════════════════════════════════════════════════
+    -->
+    <div class="projects-grid">
+
+      <!-- PROJECT 01 -->
+      <article class="project-card reveal" data-index="01">
+        <div class="project-img-wrap">
+          <img src="assets/img/pq-project.png" alt="Project 01 Image" />
+          <div class="project-overlay"></div>
+          <span class="project-tag">Energy</span>
+        </div>
+        <div class="project-body">
+          <div class="project-number">Project 01</div>
+          <h3 class="project-title">AI-Powered Power Quality Detection for Semiconductor Fabs</h3>
+          <p class="project-desc">Semiconductor fabs run on razor-thin tolerances. A microsecond voltage sag or a subtle harmonic disturbance can corrupt an entire wafer batch — but pinpointing the cause in a sea of high-frequency power data is a needle-in-a-haystack problem at industrial scale.
+We developed the core machine learning IP for an early-stage engineering startup targeting this exact problem. Working from raw ultra-high resolution power waveform data, we designed and implemented a time series classification system capable of automatically identifying and categorizing power quality events — including transients, sags, swells, flicker, and harmonic distortion — in real time.
+The models were built with interpretability as a first-class requirement: every classification comes with a transparent explanation of the signal features that drove the decision, giving facility engineers the diagnostic insight they need, not just an alert.</p>
+          <div class="project-footer">
+            <div class="project-chips">
+              <span class="project-chip">Time Series Classification</span>
+              <span class="project-chip">Digital Signal Processing</span>
+              <span class="project-chip">Explainable AI</span>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">PERSONO AI</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Boutique Probabilistic AI & Data Science Consultancy Helping You Turn Your Data Into Clear Business Decisions.</h2>
-                        <a class="btn btn-primary" href="#signup">Get In Touch</a>
-                    </div>
-                </div>
+            <div class="project-arrow">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </div>
-        </header>
-        <!-- About -->
-        <section class="about-section text-center py-5" id="about" style="background-color: #0d0d0d;">
-          <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="text-white mb-4">ABOUT PERSONO AI</h2>
-                <p class="text-white-50 fs-5 mb-6">
-                  We specialize in building customized AI and data science models that help businesses turn their data into clear, actionable insights.
-                </p>
-                <p class="text-white-50 fs-5 mb-6">
-                  Our team works collaboratively with clients to develop interpretable (“white box”) models tailored to their unique challenges—while rigorously accounting for uncertainty in the data.
-                </p>
-                <p class="text-white-50 fs-5 mb-6">
-                  Our open-book approach to modeling sets us apart, empowering clients to understand and learn from their data, not just accept a black box. We serve industries including Engineering, Finance, Biotech, Adtech, and Supply Chains.
-                </p>
-                <a class="btn btn-primary mt-6" href="#signup">Schedule a Discovery Call</a>
-              </div>
-            </div>
-              <!--                <img class="img-fluid" src="assets/img/math.jpeg" alt="..." />-->
           </div>
-        </section>
-        <!-- Projects-->
-        <!--<section class="projects-section bg-light" id="projects">
-            <div class="container px-4 px-lg-5">
-                
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>LLM Ranking Model</h4>
-                            <p class="text-black-50 mb-0">A probabilistic model that leverages Bayesian techniques to forecast the relative ranking and performance of large language models.</p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+      </article>
 
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Recession Model</h4>
-                                    <p class="mb-0 text-white-50">A probabilistic model that combines economic indicators, historical data, and advanced Bayesian techniques to estimate the likelihood of an impending economic recessions.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- PROJECT 02 -->
+      <article class="project-card reveal reveal-delay-1" data-index="02">
+        <div class="project-img-wrap">
+          <img src="assets/img/pgmap-project.png" alt="Project 02 Image" />
+          <div class="project-overlay"></div>
+          <span class="project-tag">Transportation</span>
+        </div>
+        <div class="project-body">
+          <div class="project-number">Project 02</div>
+          <h3 class="project-title">Pavement Performance Grade (PG) Mapping for Jordan</h3>
+          <p class="project-desc">Asphalt laid to the wrong performance specification will rut in summer heat, crack in winter cold, and degrade years ahead of schedule.
+Jordan's Ministry of Transportation engaged us to build the country's national Performance Grade (PG) map: the authoritative specification that governs which asphalt mixtures are permissible across every region of the country, based on the thermal demands of the local climate.
+Working from over 20 years of meteorological records spanning Jordan's diverse terrain, we engineered a rich feature set from temperature time series, elevation, and spatial variables. These fed a pavement temperature prediction model calibrated to the AASHTO Superpave PG grading standard, producing a spatially continuous, statistically rigorous PG map that now informs national road design policy.
+The deliverable wasn't just a model — it was a transparent, reproducible methodology the Ministry could own, validate, and update as climate patterns evolve.</p>
+          <div class="project-footer">
+            <div class="project-chips">
+              <span class="project-chip">Bayesian Hierarchical Modeling</span>
+              <span class="project-chip">Geospatial Modeling</span>
+              <span class="project-chip">Climate Science</span>
+            </div>
+            <div class="project-arrow">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+        </div>
+      </article>
 
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Inflation Model</h4>
-                                    <p class="mb-0 text-white-50">A model that integrates macroeconomic factors, monetary policy decisions, and market data to forecast the future inflation rate in the United States economy.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <!-- PROJECT 03 -->
+      <article class="project-card reveal reveal-delay-2" data-index="03">
+        <div class="project-img-wrap">
+          <img src="assets/img/geotarget-project.png" alt="Project 03 Image" />
+          <div class="project-overlay"></div>
+          <span class="project-tag">Marketing</span>
+        </div>
+        <div class="project-body">
+          <div class="project-number">Project 03</div>
+          <h3 class="project-title">Precision Geo-Targeting for Marketing Agencies</h3>
+          <p class="project-desc">Most geo-targeting is educated guesswork. A media planner draws a radius around a market, layers on a few demographic filters, and hopes the budget lands somewhere near the right audience. The result is spend diffused across geography that was never going to convert.
+We built a smarter alternative: an automated, AI-powered geo-targeting algorithm designed for marketing agencies managing campaigns across diverse client verticals. At its core is a propensity scoring model that operates at the census tract level, assigning each tract a conversion likelihood score before a dollar of media is committed.
+The technical centerpiece is a novel application of LLM-based semantic similarity: brand and product descriptions are embedded alongside tract-level demographics, and socio-economics profiles, and scores are computed. This allows the model to match target audience character to brand character in a way that traditional demographic filters simply cannot.
+The output is a ranked set of geo targets down to the 1 mile radius that agencies can directly import into their ads platforms.</p>
+          <div class="project-footer">
+            <div class="project-chips">
+              <span class="project-chip">Marketing Technology</span>
+              <span class="project-chip">Optimization</span>
+              <span class="project-chip">Generative AI</span>
             </div>
-        </section> -->
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission failed!</div>
-                                    Email us directly at personoai@pm.me
-                                    <br />
-                                    <a href="mailto:personoai@pm.me">personoai@pm.me</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                        </form>
-                    </div>
-                </div>
+            <div class="project-arrow">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
             </div>
-        </section>
-        <!-- Contact-->
-        <section class="contact-section bg-black">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">San Francisco CA</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="mailto:personoai@pm.me">personoai@pm.me</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">+1 (628) 292-6365</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://twitter.com/personoai"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="https://linkedin.com/in/ztashman"><i class="fab fa-linkedin"></i></a>
-<!--                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>-->
-<!--                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>-->
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Persono AI 2025</div></footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * Zaid Custom Scripts * * * * * * * * * * * * *-->
-        <!--        <script> </script>-->
-    </body>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /projects-grid -->
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-label="Contact Persono AI">
+  <div class="section-inner">
+    <div>
+      <p class="section-tag reveal">Get In Touch</p>
+      <h2 class="section-heading reveal reveal-delay-1">
+        Ready to Unlock<br><em>Your Data's Potential?</em>
+      </h2>
+      <p class="contact-intro reveal reveal-delay-2">
+        Tell us about your challenge. We'll help you determine whether probabilistic AI is the right fit.
+      </p>
+      <div class="contact-details">
+        <div class="contact-item reveal">
+          <span class="contact-item-label">Location</span>
+          <span class="contact-item-value">San Francisco, CA</span>
+        </div>
+        <div class="contact-item reveal reveal-delay-1">
+          <span class="contact-item-label">Email</span>
+          <span class="contact-item-value">info@persono.ai</span>
+        </div>
+        <div class="contact-item reveal reveal-delay-2">
+          <span class="contact-item-label">Phone</span>
+          <span class="contact-item-value">+1 (628) 292-6365</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="contact-form reveal reveal-delay-1">
+      <div class="form-grid">
+        <div class="form-row">
+          <label>First Name</label>
+          <input type="text" placeholder="Jane" />
+        </div>
+        <div class="form-row">
+          <label>Last Name</label>
+          <input type="text" placeholder="Smith" />
+        </div>
+      </div>
+      <div class="form-row">
+        <label>Email</label>
+        <input type="email" placeholder="jane@company.com" />
+      </div>
+      <div class="form-row">
+        <label>Company</label>
+        <input type="text" placeholder="Company Name" />
+      </div>
+      <div class="form-row">
+        <label>Industry</label>
+        <select>
+          <option value="" disabled selected>Select your industry</option>
+          <option>Engineering</option>
+          <option>Finance</option>
+          <option>Biotech</option>
+          <option>Adtech</option>
+          <option>Supply Chain</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>Tell Us About Your Challenge</label>
+        <textarea rows="5" placeholder="Describe your data challenge or goal…"></textarea>
+      </div>
+      <a href="#" class="btn-primary" style="display:inline-block;margin-top:8px;"><span>Send Message</span></a>
+    </div> -->
+  </div>
+</section>
+
+<!-- FOOTER -->
+</main>
+<footer>
+  <div class="footer-logo">Persono<span> AI</span></div>
+  <div class="footer-copy">© 2026 Persono LLC</div>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
 </html>

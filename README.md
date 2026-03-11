@@ -1,2 +1,0 @@
-# Persono AI
-Landing Page
