@@ -1,0 +1,26 @@
+# Persono AI
+
+> Boutique Probabilistic AI & Data Science Consultancy
+
+Persono AI is a boutique probabilistic AI and data science consultancy based in San Francisco. We specialize in building customized, interpretable ("white box") models tailored to our clients' unique business challenges—while rigorously accounting for uncertainty in the data.
+
+## Contact Information
+- Website: https://persono.ai/
+- Email: info@persono.ai
+- Phone: +1 (628) 292-6365
+- Location: San Francisco, CA
+
+## Core Offerings & Philosophy
+Every business problem carries uncertainty. Our probabilistic approach acknowledges this reality head-on—producing models that communicate confidence levels alongside predictions, so stakeholders can make truly informed decisions. We reject black-box solutions; our models are transparent, explainable, and auditable.
+
+- **Probabilistic Modeling:** Every model rigorously quantifies uncertainty to provide a full probability distribution.
+- **Interpretable "White Box" AI:** Transparent, explainable, and auditable solutions.
+- **Bespoke Solutions:** We design every analysis from the ground up around the client's business context. No off-the-shelf tools.
+- **Collaborative Partnership:** We work alongside client teams to transfer knowledge and build internal capability.
+
+## Industries Served
+- Engineering
+- Finance
+- Biotech
+- Adtech
+- Supply Chain
