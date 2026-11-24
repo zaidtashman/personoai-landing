@@ -1,8 +1,8 @@
 # Persono AI
 
-> Boutique Probabilistic AI & Data Science Consultancy
+> Boutique AI Consultancy: AI Agents, Automation & Probabilistic AI
 
-Persono AI is a boutique probabilistic AI and data science consultancy based in San Francisco. We specialize in building customized, interpretable ("white box") models tailored to our clients' unique business challenges—while rigorously accounting for uncertainty in the data.
+Persono AI is a boutique AI consultancy based in San Francisco. We help businesses put AI to work, from AI agents and workflow automations that take repetitive tasks off their plate to customized, interpretable ("white box") models tailored to their unique challenges, built while rigorously accounting for uncertainty in the data.
 
 ## Contact Information
 - Website: https://persono.ai/
@@ -10,13 +10,19 @@ Persono AI is a boutique probabilistic AI and data science consultancy based in 
 - Phone: +1 (628) 292-6365
 - Location: San Francisco, CA
 
+## AI Agents & Automation
+- **Agentic Workflow Automation:** Agents that handle repetitive operational steps (intake, scheduling, follow-ups, invoicing, reporting) end to end, escalating to a person when judgment is needed.
+- **AI-Powered Research & Analysis:** Agents that gather, summarize, and analyze information, paired with statistical rigor and honest confidence estimates.
+- **Custom AI Tools & Assistants:** AI assistants grounded in a client's own data and LLM-powered tools built into existing systems.
+- **AI Education & Training:** Hands-on workshops and one-on-one sessions that help business owners and teams use AI effectively and responsibly.
+
 ## Core Offerings & Philosophy
-Every business problem carries uncertainty. Our probabilistic approach acknowledges this reality head-on—producing models that communicate confidence levels alongside predictions, so stakeholders can make truly informed decisions. We reject black-box solutions; our models are transparent, explainable, and auditable.
+Every business problem carries uncertainty. Our probabilistic approach acknowledges this reality head-on, producing models that communicate confidence levels alongside predictions, so stakeholders can make truly informed decisions. We reject black-box solutions: our models and agents are transparent, explainable, and auditable, with people kept in control of the decisions that matter.
 
 - **Probabilistic Modeling:** Every model rigorously quantifies uncertainty to provide a full probability distribution.
 - **Interpretable "White Box" AI:** Transparent, explainable, and auditable solutions.
-- **Bespoke Solutions:** We design every analysis from the ground up around the client's business context. No off-the-shelf tools.
-- **Collaborative Partnership:** We work alongside client teams to transfer knowledge and build internal capability.
+- **Tailored Solutions:** The right tool for the job, from a well-configured off-the-shelf AI assistant to a custom agent or model.
+- **Collaborative Partnership:** We work alongside client teams to train people and build internal capability.
 
 ## Industries Served
 - Engineering

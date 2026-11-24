@@ -401,6 +401,34 @@ section { position: relative; z-index: 1; }
     color: rgba(244,239,230,.6);
 }
 
+/* ── AI AGENTS ── */
+#agents { background: var(--ink); border-top: 1px solid var(--rule); }
+.agents-header { max-width: 720px; margin-bottom: 64px; }
+.agents-intro {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: rgba(244,239,230,.72);
+    margin-top: 32px;
+}
+.agents-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+.agents-note {
+    margin-top: 48px;
+    font-family: var(--ff-serif);
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.65;
+    color: var(--mist);
+    max-width: 760px;
+}
+.agents-note span { color: var(--gold-lt); font-style: normal; }
+@media (max-width: 900px) {
+    .agents-grid { grid-template-columns: 1fr; }
+}
+
 /* ── INDUSTRIES SECTION ── */
 #industries { background: var(--ink); }
 #industries .section-inner { text-align: center; }
